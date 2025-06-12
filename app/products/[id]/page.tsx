@@ -118,7 +118,7 @@ export default function ProductPage() {
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold">${dynamicPrice.toFixed(2)}</span>
                   {dynamicPrice !== product.basePrice && (
-                    <span className="text-lg text-muted-foreground line-through">${product.basePrice.toFixed(2)}</span>
+                    <span className="text-lg text-muted-foreground line-through">₹{product.basePrice.toFixed(2)}</span>
                   )}
                 </div>
 
