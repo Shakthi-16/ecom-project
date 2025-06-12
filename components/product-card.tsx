@@ -47,7 +47,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </CardContent>
         <CardFooter className="p-4 pt-0 flex justify-between items-center">
           <div className="flex flex-col">
-            <span className="text-lg font-bold">${dynamicPrice.toFixed(2)}</span>
+            <span className="text-lg font-bold">₹{dynamicPrice.toFixed(2)}</span>
             {dynamicPrice !== product.basePrice && (
               <span className="text-sm text-muted-foreground line-through">${product.basePrice.toFixed(2)}</span>
             )}
